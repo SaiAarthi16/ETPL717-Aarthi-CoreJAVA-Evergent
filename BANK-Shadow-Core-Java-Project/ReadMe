@@ -1,0 +1,13 @@
+
+
+
+mysql> create table bank_database(accno int ,name varchar(20),mobile int,balance int);
+
+create table transactions(accno int,transaction varchar(50));
+
+Oralce
+SQL Table Creation:
+
+create table bank_database(accno int primary key,name varchar(20),mobile number(10,0),balance number(10,2));
+
+create table transactions(accno int,transaction varchar(50));

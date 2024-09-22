@@ -1,0 +1,12 @@
+
+
+mysql> create database evergentdb;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use evergentdb;
+Database changed
+mysql>
+
+
+ //mysql>create table employee9(no integer,ename varchar(20),sal float(8,2));
+//mysql> insert into employee9 values(101,'raj1',10000);

@@ -1,0 +1,24 @@
+The java.util.Collections class provides a rich set of 
+static utility methods to operate on collections. 
+These methods are highly useful for common tasks such as sorting,
+ shuffling, finding min/max, counting occurrences, and more. 
+ Using these methods can simplify many common programming tasks 
+ related to collections, improve code readability, and enhance 
+ performance by using well-optimized library functions.
+ 
+ 
+ Collections.synchronizedMap
+ 
+ Create a HashMap: A regular HashMap is created to store key-value pairs.
+Synchronize the HashMap: 
+The Collections.synchronizedMap method is used to create a synchronized view of the HashMap. This ensures that all operations on the map are thread-safe.
+Access and modify the synchronized map: 
+You can access and modify elements in the synchronized map using standard Map operations like put and get.
+Iterate over the synchronized map: 
+You can iterate over the entries in the synchronized map using a for-each loop.
+
+Collections.synchronizedMap is used to make a Map thread-safe.
+All operations on the synchronized map are performed in a synchronized manner, preventing concurrent modifications.
+The underlying Map implementation (in this case, a HashMap) remains unchanged.
+The synchronized map provides a thread-safe way to access and modify shared data structures.
+

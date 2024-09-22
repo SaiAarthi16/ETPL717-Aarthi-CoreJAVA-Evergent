@@ -1,0 +1,66 @@
+CASE STUDY :Customer Support Ticketing Using ArrayDeque OR LinkedLIst
+create a case study to illustrate how to use the ArrayDeque class as a queue in Java. 
+In this scenario, we'll build a simple customer support ticketing system where tickets are processed in the order they are received. This case study will demonstrate the fundamental operations of a queue, including adding elements, processing elements, and checking the state of the queue.
+
+Case Study: Customer Support Ticketing System
+Objective:
+Develop a customer support ticketing system using the ArrayDeque class in Java to manage and process support tickets in a first-come, first-served (FIFO) order.
+
+Requirements:
+Add tickets to the queue as they are created.
+Process tickets in the order they were added.
+Check the next ticket in line without removing it.
+View the state of the queue to understand how many tickets are waiting.
+Handle an empty queue gracefully when trying to process tickets.
+
+Implementation Details:
+We'll use the ArrayDeque class to implement this system because it provides efficient operations to add and remove elements from both ends of the deque and does not impose capacity restrictions, unlike LinkedList. Here’s how you can implement this:
+
+Step-by-Step Implementation:
+   1. Import Necessary Packages: 
+           Import java.util.ArrayDeque and other necessary classes.
+
+   2. Define the Main Class and Queue: 
+           We'll define a SupportTicketSystem class containing a main method to simulate the process.
+
+  3. Create Methods for Different Operations:
+
+	addTicket(String ticket): Adds a ticket to the queue.
+	processNextTicket(): Processes the next ticket in the queue.
+	peekNextTicket(): Checks the next ticket without removing it.
+	displayQueue(): Displays all tickets currently in the queue.
+
+
+
+1. Ticket Queue Initialization:
+
+      ticketQueue is an instance of ArrayDeque<String> used to hold ticket descriptions. 
+      The ArrayDeque class implements the Queue interface and provides FIFO queue operations.
+2. Adding Tickets:
+
+	addTicket(String ticket) method adds a new ticket to the end of the queue using the add() method.
+3. Processing Tickets:
+
+	processNextTicket() method removes and processes the ticket at the front of the queue using poll(), 	which returns null if the queue is empty, thereby preventing exceptions.
+4. Peeking at Tickets:
+
+	peekNextTicket() method retrieves the ticket at the front of the queue without removing it using 	peek(). 
+	This is useful for checking the next ticket to be processed.
+5. Displaying the Queue:
+
+	displayQueue() method prints all the tickets currently in the queue, providing an overview of pending 	tasks.
+6. Handling Empty Queues:
+
+	Both processNextTicket() and peekNextTicket() methods include checks for an empty queue to handle 	cases gracefully where no tickets are present.
+
+
+Go through  Points :
+ 1. ArrayDeque as a Queue:
+        The ArrayDeque class is an excellent choice for implementing a queue due to its efficiency and 	flexibility. 
+	It provides constant-time performance for adding, removing, and accessing elements.
+ 2. Handling Empty Queues:
+        Always check if the queue is empty before processing or peeking elements to avoid exceptions.
+3. Queue Operations:
+        add(), poll(), and peek() are fundamental queue operations provided by ArrayDeque.
+        They make it easy to manage the flow of tasks or items in a system that requires FIFO ordering.
+	
